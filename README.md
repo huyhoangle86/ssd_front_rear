@@ -15,6 +15,20 @@
 * Google Colab
 
 ## Approach
+* The vehicles dataset was labeled by XML file so first we need to extract the class labels by using BeautifulSoup library
+* Then convert all images and its labels to tensorflow record file 
+* Use pre-trained model in this project I used SSD inception v1 for tf 1.x in order to use this step we need to clone the TFOD API the link can be found [here](https://github.com/tensorflow/models)
 
 
 Training process over 200,000 steps, which took approximately 13 hours on Google Colab. The loss ended at approximately 1.7
+
+## Visualize the loss and accuracy in TensorBoard
+
+![Loss ](Loss.PNG)
+
+![Accuracy ](Accuracy.PNG)
+
+## Result
+![1 ](1.PNG)
+![2 ](2.PNG)
+![3](3.PNG)
